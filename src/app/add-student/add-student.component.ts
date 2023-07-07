@@ -5,7 +5,7 @@ import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-add-student',
   templateUrl: './add-student.component.html',
-  styleUrls: ['./add-student.component.scss'],
+  styleUrls: ['./add-student.component.css'],
 })
 export class AddStudentComponent implements OnInit {
   public studentForm: FormGroup;
