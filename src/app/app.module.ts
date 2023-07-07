@@ -8,6 +8,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { EditStudentComponent } from './edit-student/edit-student.component';
 import { StudentListComponent } from './student-list/student-list.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StudentListComponent } from './student-list/student-list.component';
   imports: [
     BrowserModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
